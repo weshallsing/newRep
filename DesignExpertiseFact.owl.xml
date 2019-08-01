@@ -1,0 +1,1959 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#"
+     xml:base="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:DesignExpertiseFactors="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#includes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#isPartOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <rdfs:comment>Indicates that the Cluster includes the specific factor</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#isPartOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster"/>
+        <rdfs:comment>Indicates that the factor is part of a Cluster</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#isRelatedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <rdfs:comment>Indicates some relation between factors</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#isSameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#isSameAs">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#ClusterSize -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#ClusterSize">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster"/>
+        <rdfs:comment>Number of factors in th Cluster</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster">
+        <rdfs:comment>Cluster of factors defines level of granularity of analysis</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor">
+        <rdfs:comment>Individual factors related to Design Expertise</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.1_Training_for_improving_quality_of_outcome"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.10_Creativity_and_added_value"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.11_Reflective_Participatory_and_Interactive_Approaches"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.12_Design_knowhow_and_concept_exploration"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.2_Scoping_and_framing_of_ill-defined_problems"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.3_Interaction_and_experience-based"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.4_Model-driven_for_idea-solutions"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.5_Operations_and_tools"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.6_Mastery_and_assessment"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.7_Individual_and_team_experience"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.8_Training_and_concept_development"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.9_Quality_and_assessment"/>
+        <ClusterSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</ClusterSize>
+        <rdfs:comment>cluster based on 12 factor analysis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.1_Training_for_improving_quality_of_outcome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.1_Training_for_improving_quality_of_outcome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.13_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.6_Efficiency_in_novel_concepts_and_solutions"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.27_Efficiency_and_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.4_Effective_design"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.13_Training_and_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.16_Skills_development"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.36_Design_evaluation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.50_User_participation_and_experiential_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.51_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.9_Efficient_and_effective"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.10_Creativity_and_added_value -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.10_Creativity_and_added_value">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.16_Idea_and_creativity_development"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.17_Creative_skills_development"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.28_Decision_criteria_and_value"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.31_Knowledge_structure_and_innovation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.49_Reasoning_and_expanding_knowledge_for_novelty"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.25_Efficiency_and_creativity"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.28_Inform_decision_making"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.31_Structuring_and_formulating_measures_for_innovation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.71_Training_for_innovation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.74_Value_addition_for_creativity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.11_Reflective_Participatory_and_Interactive_Approaches -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.11_Reflective_Participatory_and_Interactive_Approaches">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.11_Forecasting_by_making_conjectures_about_ideas"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.20_Assumptions_and_design_management"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.3_Collaboration_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.1_Ill-defined_problem_and_reflective_practice"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.10_Reflection_and_design_strategies"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.15_Conjectures_Investigations_and_Analysis"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.21_Reflection_and_representation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.22_Participation_and_engagement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.29_Search_and_reflection"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.1_Engagement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.12_User_participation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.20_Design_conjectures"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.50_User_participation_and_experiential_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.56_Situated_and_reflective_practice"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.62_Involvement_and_participation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.66_Team_collaboration_and_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.75_Experience_and_reflective_decision_process"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.8_Reflection_and_concept_formation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.12_Design_knowhow_and_concept_exploration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.12_Design_knowhow_and_concept_exploration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.10_Idea_generation_process"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.11_Forecasting_by_making_conjectures_about_ideas"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.15_Exploration_and_analysis"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.16_Idea_and_creativity_development"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.18_Concepts_and_knowledge_-based_design"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.2_Mastery_and_breadth_of_skills"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.6_Efficiency_in_novel_concepts_and_solutions"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.8_Co-creation_of_concepts"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.11_Articulation_and_knowledge_elicitation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.17_Creative_skills_development"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.18_Concept_and_context_awareness"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.29_Search_and_reflection"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.31_Knowledge_structure_and_innovation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.33_Deliberation_and_knowledge_exchange"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.37_Team_knowledge_and_performance"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.39_Contextual_knowledge"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.46_Systematic_analysis_and_knowledge_transfer"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.8_Combine_concepts_and_iterate"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.14_Knowledge_base"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.16_Skills_development"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.21_Contextual_knowledge"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.4_Knowledge_structure"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.40_Exploration_and_conjecturing"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.42_Conceptualization_and_ideation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.45_Dealing_with_the_unknown"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.46_Systemic_and_concept_driven"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.49_Broaden_knowledge"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.52_Exchanging_complementary_knowledge"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.57_Knowledge_elicitation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.59_Knowledge_typology_and_representation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.76_Creating_new_knowledge"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.77_Skills_and_knowledge_for_de-fixation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.2_Scoping_and_framing_of_ill-defined_problems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.2_Scoping_and_framing_of_ill-defined_problems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.1_Context_and_fixation_in_ill-defined_problems"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.12_Managing_uncertainty_and_complexity"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.19_Framing_and_assessing_design"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.1_Ill-defined_problem_and_reflective_practice"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.12_Dealing_with_complexity"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.43_Multiple_perspectives"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.45_Dealing_with_complexity"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.31_Structuring_and_formulating_measures_for_innovation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.35_Discerning_and_dealing_with_complexity"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.60_Dealing_with_complex_products"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.79_Complementary_perspectives"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.3_Interaction_and_experience-based -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.3_Interaction_and_experience-based">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.13_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.3_Collaboration_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.4_Interaction_and_solution_focus"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.8_Co-creation_of_concepts"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.13_Sharing_experiences_and_mentoring"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.22_Participation_and_engagement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.24_Inteaction_Participation_and_Learning_Experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.3_Interaction_and_representation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.33_Deliberation_and_knowledge_exchange"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.44_Measuring_user_-_product_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.48_Design_experience_and_computational_techniques"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.1_Engagement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.22_Domain_Experience_Participation_and_Involvement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.24_Novice_and_expert_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.29_Discussing_and_share"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.49_Broaden_knowledge"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.51_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.52_Exchanging_complementary_knowledge"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.53_User_awareness_and_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.54_Teamwork"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.62_Involvement_and_participation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.63_Design_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.66_Team_collaboration_and_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.7_Team_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.75_Experience_and_reflective_decision_process"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.4_Model-driven_for_idea-solutions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.4_Model-driven_for_idea-solutions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.17_Design_techniques_and_methods"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.32_Modelling_process"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.6_Modeling_tools"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.11_Product_modelling"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.32_Modelling_and_Assessment"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.55_Methodology_and_process"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.5_Operations_and_tools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.5_Operations_and_tools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.17_Design_techniques_and_methods"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.5_Operations_and_design_process"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.48_Design_experience_and_computational_techniques"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.6_Modeling_tools"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.48_Design_procedures_and_rules"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.5_Operation_techniques_and_tools"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.6_Mastery_and_assessment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.6_Mastery_and_assessment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.19_Framing_and_assessing_design"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.2_Mastery_and_breadth_of_skills"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.9_Assessment:_effectiveness_and_efficiency"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.16_Insights_and_assessment"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.19_Evaluating_effectiveness_of_design_process"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.2_Efficiency_and_mastery"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.36_Iterative_decision_making"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.47_Representation_Mastery_and_Control"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.9_Efficiency_and_assessment"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.17_Assessment_and_judgement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.2_Level_of_expertise"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.22_Domain_Experience_Participation_and_Involvement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.24_Novice_and_expert_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.26_Exhibition_of_expertise"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.32_Modelling_and_Assessment"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.36_Design_evaluation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.7_Individual_and_team_experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.7_Individual_and_team_experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.13_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.3_Collaboration_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.7_Individual_and_team_performance"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.37_Team_knowledge_and_performance"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.7_Team_and_problem_context"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.22_Domain_Experience_Participation_and_Involvement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.50_User_participation_and_experiential_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.51_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.54_Teamwork"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.66_Team_collaboration_and_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.68_Team_performance"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.7_Team_interaction"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.72_Team_management"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.75_Experience_and_reflective_decision_process"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.8_Training_and_concept_development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.8_Training_and_concept_development">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.11_Forecasting_by_making_conjectures_about_ideas"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.13_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.16_Idea_and_creativity_development"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.18_Concepts_and_knowledge_-based_design"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.6_Efficiency_in_novel_concepts_and_solutions"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.8_Co-creation_of_concepts"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.13_Sharing_experiences_and_mentoring"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.18_Concept_and_context_awareness"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.27_Efficiency_and_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.8_Combine_concepts_and_iterate"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.13_Training_and_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.42_Conceptualization_and_ideation"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.46_Systemic_and_concept_driven"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.50_User_participation_and_experiential_learning"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.51_Training_and_experience"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.71_Training_for_innovation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.9_Quality_and_assessment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12.9_Quality_and_assessment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#12Factors"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.19_Framing_and_assessing_design"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.9_Assessment:_effectiveness_and_efficiency"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.16_Insights_and_assessment"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.19_Evaluating_effectiveness_of_design_process"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.36_Iterative_decision_making"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.9_Efficiency_and_assessment"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.17_Assessment_and_judgement"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.32_Modelling_and_Assessment"/>
+        <isRelatedTo rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.36_Design_evaluation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.1_Context_and_fixation_in_ill-defined_problems"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.10_Idea_generation_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.11_Forecasting_by_making_conjectures_about_ideas"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.12_Managing_uncertainty_and_complexity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.13_Training_and_experience"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.14_Design_management"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.15_Exploration_and_analysis"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.16_Idea_and_creativity_development"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.17_Design_techniques_and_methods"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.18_Concepts_and_knowledge_-based_design"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.19_Framing_and_assessing_design"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.2_Mastery_and_breadth_of_skills"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.20_Assumptions_and_design_management"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.3_Collaboration_experience"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.4_Interaction_and_solution_focus"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.5_Operations_and_design_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.6_Efficiency_in_novel_concepts_and_solutions"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.7_Individual_and_team_performance"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.8_Co-creation_of_concepts"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.9_Assessment:_effectiveness_and_efficiency"/>
+        <ClusterSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</ClusterSize>
+        <rdfs:comment>cluster based on 20 factor analysis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.1_Context_and_fixation_in_ill-defined_problems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.1_Context_and_fixation_in_ill-defined_problems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.10_Idea_generation_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.10_Idea_generation_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.11_Forecasting_by_making_conjectures_about_ideas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.11_Forecasting_by_making_conjectures_about_ideas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.12_Managing_uncertainty_and_complexity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.12_Managing_uncertainty_and_complexity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.13_Training_and_experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.13_Training_and_experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.14_Design_management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.14_Design_management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.15_Exploration_and_analysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.15_Exploration_and_analysis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.16_Idea_and_creativity_development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.16_Idea_and_creativity_development">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.17_Design_techniques_and_methods -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.17_Design_techniques_and_methods">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.18_Concepts_and_knowledge_-based_design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.18_Concepts_and_knowledge_-based_design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.19_Framing_and_assessing_design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.19_Framing_and_assessing_design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.2_Mastery_and_breadth_of_skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.2_Mastery_and_breadth_of_skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.20_Assumptions_and_design_management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.20_Assumptions_and_design_management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.3_Collaboration_experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.3_Collaboration_experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.4_Interaction_and_solution_focus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.4_Interaction_and_solution_focus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.5_Operations_and_design_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.5_Operations_and_design_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.6_Efficiency_in_novel_concepts_and_solutions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.6_Efficiency_in_novel_concepts_and_solutions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.7_Individual_and_team_performance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.7_Individual_and_team_performance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.8_Co-creation_of_concepts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.8_Co-creation_of_concepts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.9_Assessment:_effectiveness_and_efficiency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20.9_Assessment:_effectiveness_and_efficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#20Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.1_Ill-defined_problem_and_reflective_practice"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.10_Reflection_and_design_strategies"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.11_Articulation_and_knowledge_elicitation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.12_Dealing_with_complexity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.13_Sharing_experiences_and_mentoring"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.14_Pro-active_and_multi-disciplinary/_interdisciplinarity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.15_Conjectures_Investigations_and_Analysis"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.16_Insights_and_assessment"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.17_Creative_skills_development"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.18_Concept_and_context_awareness"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.19_Evaluating_effectiveness_of_design_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.2_Efficiency_and_mastery"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.20_Design_assumptions_and_design_strategy"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.21_Reflection_and_representation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.22_Participation_and_engagement"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.23_Methodical_approach_and_structuring"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.24_Inteaction_Participation_and_Learning_Experience"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.25_Complementary_perspectives"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.26_Process_and_outcome:_alternative_solutions_for_ill-_defined_problems"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.27_Efficiency_and_learning"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.28_Decision_criteria_and_value"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.29_Search_and_reflection"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.3_Interaction_and_representation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.30_Dealing_with_facts_and_fiction"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.31_Knowledge_structure_and_innovation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.32_Modelling_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.33_Deliberation_and_knowledge_exchange"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.34_Control"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.35_Performance_assessment_strategy"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.36_Iterative_decision_making"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.37_Team_knowledge_and_performance"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.38_Emergence_and_discovery"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.39_Contextual_knowledge"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.4_Effective_design"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.40_Analysis_and_review"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.41_Alternative_solutions"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.42_Participatory_action_and_concept_finding"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.43_Multiple_perspectives"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.44_Measuring_user_-_product_experience"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.45_Dealing_with_complexity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.46_Systematic_analysis_and_knowledge_transfer"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.47_Representation_Mastery_and_Control"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.48_Design_experience_and_computational_techniques"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.49_Reasoning_and_expanding_knowledge_for_novelty"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.5_Heuristics_and_techniques"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.50_Suggestions_for_design_development"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.6_Modeling_tools"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.7_Team_and_problem_context"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.8_Combine_concepts_and_iterate"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.9_Efficiency_and_assessment"/>
+        <ClusterSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</ClusterSize>
+        <rdfs:comment>cluster based on 50 factor analysis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.1_Ill-defined_problem_and_reflective_practice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.1_Ill-defined_problem_and_reflective_practice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.10_Reflection_and_design_strategies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.10_Reflection_and_design_strategies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.11_Articulation_and_knowledge_elicitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.11_Articulation_and_knowledge_elicitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.12_Dealing_with_complexity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.12_Dealing_with_complexity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.13_Sharing_experiences_and_mentoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.13_Sharing_experiences_and_mentoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.14_Pro-active_and_multi-disciplinary/_interdisciplinarity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.14_Pro-active_and_multi-disciplinary/_interdisciplinarity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.15_Conjectures_Investigations_and_Analysis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.15_Conjectures_Investigations_and_Analysis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.16_Insights_and_assessment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.16_Insights_and_assessment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.17_Creative_skills_development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.17_Creative_skills_development">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.18_Concept_and_context_awareness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.18_Concept_and_context_awareness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.19_Evaluating_effectiveness_of_design_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.19_Evaluating_effectiveness_of_design_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.2_Efficiency_and_mastery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.2_Efficiency_and_mastery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.20_Design_assumptions_and_design_strategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.20_Design_assumptions_and_design_strategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.21_Reflection_and_representation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.21_Reflection_and_representation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.22_Participation_and_engagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.22_Participation_and_engagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.23_Methodical_approach_and_structuring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.23_Methodical_approach_and_structuring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.24_Inteaction_Participation_and_Learning_Experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.24_Inteaction_Participation_and_Learning_Experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.25_Complementary_perspectives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.25_Complementary_perspectives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.26_Process_and_outcome:_alternative_solutions_for_ill-_defined_problems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.26_Process_and_outcome:_alternative_solutions_for_ill-_defined_problems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.27_Efficiency_and_learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.27_Efficiency_and_learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.28_Decision_criteria_and_value -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.28_Decision_criteria_and_value">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.29_Search_and_reflection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.29_Search_and_reflection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.3_Interaction_and_representation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.3_Interaction_and_representation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.30_Dealing_with_facts_and_fiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.30_Dealing_with_facts_and_fiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.31_Knowledge_structure_and_innovation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.31_Knowledge_structure_and_innovation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.32_Modelling_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.32_Modelling_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.33_Deliberation_and_knowledge_exchange -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.33_Deliberation_and_knowledge_exchange">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.34_Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.34_Control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.35_Performance_assessment_strategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.35_Performance_assessment_strategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.36_Iterative_decision_making -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.36_Iterative_decision_making">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.37_Team_knowledge_and_performance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.37_Team_knowledge_and_performance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.38_Emergence_and_discovery -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.38_Emergence_and_discovery">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.39_Contextual_knowledge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.39_Contextual_knowledge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.4_Effective_design -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.4_Effective_design">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.40_Analysis_and_review -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.40_Analysis_and_review">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.41_Alternative_solutions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.41_Alternative_solutions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.42_Participatory_action_and_concept_finding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.42_Participatory_action_and_concept_finding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.43_Multiple_perspectives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.43_Multiple_perspectives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.44_Measuring_user_-_product_experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.44_Measuring_user_-_product_experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.45_Dealing_with_complexity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.45_Dealing_with_complexity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.46_Systematic_analysis_and_knowledge_transfer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.46_Systematic_analysis_and_knowledge_transfer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.47_Representation_Mastery_and_Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.47_Representation_Mastery_and_Control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.48_Design_experience_and_computational_techniques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.48_Design_experience_and_computational_techniques">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.49_Reasoning_and_expanding_knowledge_for_novelty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.49_Reasoning_and_expanding_knowledge_for_novelty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.5_Heuristics_and_techniques -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.5_Heuristics_and_techniques">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.50_Suggestions_for_design_development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.50_Suggestions_for_design_development">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.6_Modeling_tools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.6_Modeling_tools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.7_Team_and_problem_context -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.7_Team_and_problem_context">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.8_Combine_concepts_and_iterate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.8_Combine_concepts_and_iterate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.9_Efficiency_and_assessment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50.9_Efficiency_and_assessment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#50Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Cluster"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.1_Engagement"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.10_Control_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.11_Product_modelling"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.12_User_participation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.13_Training_and_learning"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.14_Knowledge_base"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.15_Review_Analysis_and_Investigation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.16_Skills_development"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.17_Assessment_and_judgement"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.18_Clarity_on_facts_and_fiction"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.19_Measurement"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.2_Level_of_expertise"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.20_Design_conjectures"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.21_Contextual_knowledge"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.22_Domain_Experience_Participation_and_Involvement"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.23_Mental_block"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.24_Novice_and_expert_interaction"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.25_Efficiency_and_creativity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.26_Exhibition_of_expertise"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.27_Predict_and_anticipate"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.28_Inform_decision_making"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.29_Discussing_and_share"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.3_Integration"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.30_Develop_context_awareness"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.31_Structuring_and_formulating_measures_for_innovation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.32_Modelling_and_Assessment"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.33_Deliberate_practice"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.34_Control_strategy"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.35_Discerning_and_dealing_with_complexity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.36_Design_evaluation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.37_Proactive_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.38_Emergent_design_and_development_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.39_Goal_oriented"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.4_Knowledge_structure"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.40_Exploration_and_conjecturing"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.41_Develop_design_alternatives"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.42_Conceptualization_and_ideation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.43_Considering_alternatives_and_being_non-fixated"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.44_User-centered_problem-solution_co-evolution"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.45_Dealing_with_the_unknown"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.46_Systemic_and_concept_driven"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.47_Communication_and_representation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.48_Design_procedures_and_rules"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.49_Broaden_knowledge"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.5_Operation_techniques_and_tools"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.50_User_participation_and_experiential_learning"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.51_Training_and_experience"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.52_Exchanging_complementary_knowledge"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.53_User_awareness_and_interaction"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.54_Teamwork"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.55_Methodology_and_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.56_Situated_and_reflective_practice"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.57_Knowledge_elicitation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.58_Design_reuse_and_strategies"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.59_Knowledge_typology_and_representation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.6_Context_and_conditions"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.60_Dealing_with_complex_products"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.61_Suggestions_for_continuous_improvement"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.62_Involvement_and_participation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.63_Design_interaction"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.64_Design_generation_as_synergistic_activity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.65_Capturing_design_intentions_and_requirements"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.66_Team_collaboration_and_interaction"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.67_Design_attitudes_and_iteration"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.68_Team_performance"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.69_Problem_decomposition_and_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.7_Team_interaction"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.70_Finding_solutions_for_ill-defined_problems"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.71_Training_for_innovation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.72_Team_management"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.73_Information_and_fact_based"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.74_Value_addition_for_creativity"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.75_Experience_and_reflective_decision_process"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.76_Creating_new_knowledge"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.77_Skills_and_knowledge_for_de-fixation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.78_Making_sense_of_problem_context"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.79_Complementary_perspectives"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.8_Reflection_and_concept_formation"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.80_Detailing_and_uncovering"/>
+        <includes rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.9_Efficient_and_effective"/>
+        <ClusterSize rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</ClusterSize>
+        <rdfs:comment>cluster based on 80 factor analysis</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.1_Engagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.1_Engagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.10_Control_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.10_Control_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.11_Product_modelling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.11_Product_modelling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.12_User_participation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.12_User_participation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.13_Training_and_learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.13_Training_and_learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.14_Knowledge_base -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.14_Knowledge_base">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.15_Review_Analysis_and_Investigation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.15_Review_Analysis_and_Investigation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.16_Skills_development -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.16_Skills_development">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.17_Assessment_and_judgement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.17_Assessment_and_judgement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.18_Clarity_on_facts_and_fiction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.18_Clarity_on_facts_and_fiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.19_Measurement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.19_Measurement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.2_Level_of_expertise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.2_Level_of_expertise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.20_Design_conjectures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.20_Design_conjectures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.21_Contextual_knowledge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.21_Contextual_knowledge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.22_Domain_Experience_Participation_and_Involvement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.22_Domain_Experience_Participation_and_Involvement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.23_Mental_block -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.23_Mental_block">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.24_Novice_and_expert_interaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.24_Novice_and_expert_interaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.25_Efficiency_and_creativity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.25_Efficiency_and_creativity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.26_Exhibition_of_expertise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.26_Exhibition_of_expertise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.27_Predict_and_anticipate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.27_Predict_and_anticipate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.28_Inform_decision_making -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.28_Inform_decision_making">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.29_Discussing_and_share -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.29_Discussing_and_share">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.3_Integration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.3_Integration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.30_Develop_context_awareness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.30_Develop_context_awareness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.31_Structuring_and_formulating_measures_for_innovation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.31_Structuring_and_formulating_measures_for_innovation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.32_Modelling_and_Assessment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.32_Modelling_and_Assessment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.33_Deliberate_practice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.33_Deliberate_practice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.34_Control_strategy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.34_Control_strategy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.35_Discerning_and_dealing_with_complexity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.35_Discerning_and_dealing_with_complexity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.36_Design_evaluation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.36_Design_evaluation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.37_Proactive_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.37_Proactive_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.38_Emergent_design_and_development_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.38_Emergent_design_and_development_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.39_Goal_oriented -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.39_Goal_oriented">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.4_Knowledge_structure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.4_Knowledge_structure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.40_Exploration_and_conjecturing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.40_Exploration_and_conjecturing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.41_Develop_design_alternatives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.41_Develop_design_alternatives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.42_Conceptualization_and_ideation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.42_Conceptualization_and_ideation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.43_Considering_alternatives_and_being_non-fixated -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.43_Considering_alternatives_and_being_non-fixated">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.44_User-centered_problem-solution_co-evolution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.44_User-centered_problem-solution_co-evolution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.45_Dealing_with_the_unknown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.45_Dealing_with_the_unknown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.46_Systemic_and_concept_driven -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.46_Systemic_and_concept_driven">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.47_Communication_and_representation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.47_Communication_and_representation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.48_Design_procedures_and_rules -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.48_Design_procedures_and_rules">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.49_Broaden_knowledge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.49_Broaden_knowledge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.5_Operation_techniques_and_tools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.5_Operation_techniques_and_tools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.50_User_participation_and_experiential_learning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.50_User_participation_and_experiential_learning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.51_Training_and_experience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.51_Training_and_experience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.52_Exchanging_complementary_knowledge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.52_Exchanging_complementary_knowledge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.53_User_awareness_and_interaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.53_User_awareness_and_interaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.54_Teamwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.54_Teamwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.55_Methodology_and_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.55_Methodology_and_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.56_Situated_and_reflective_practice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.56_Situated_and_reflective_practice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.57_Knowledge_elicitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.57_Knowledge_elicitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.58_Design_reuse_and_strategies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.58_Design_reuse_and_strategies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.59_Knowledge_typology_and_representation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.59_Knowledge_typology_and_representation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.6_Context_and_conditions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.6_Context_and_conditions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.60_Dealing_with_complex_products -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.60_Dealing_with_complex_products">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.61_Suggestions_for_continuous_improvement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.61_Suggestions_for_continuous_improvement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.62_Involvement_and_participation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.62_Involvement_and_participation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.63_Design_interaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.63_Design_interaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.64_Design_generation_as_synergistic_activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.64_Design_generation_as_synergistic_activity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.65_Capturing_design_intentions_and_requirements -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.65_Capturing_design_intentions_and_requirements">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.66_Team_collaboration_and_interaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.66_Team_collaboration_and_interaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.67_Design_attitudes_and_iteration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.67_Design_attitudes_and_iteration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.68_Team_performance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.68_Team_performance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.69_Problem_decomposition_and_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.69_Problem_decomposition_and_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.7_Team_interaction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.7_Team_interaction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.70_Finding_solutions_for_ill-defined_problems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.70_Finding_solutions_for_ill-defined_problems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.71_Training_for_innovation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.71_Training_for_innovation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.72_Team_management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.72_Team_management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.73_Information_and_fact_based -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.73_Information_and_fact_based">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.74_Value_addition_for_creativity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.74_Value_addition_for_creativity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.75_Experience_and_reflective_decision_process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.75_Experience_and_reflective_decision_process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.76_Creating_new_knowledge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.76_Creating_new_knowledge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.77_Skills_and_knowledge_for_de-fixation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.77_Skills_and_knowledge_for_de-fixation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.78_Making_sense_of_problem_context -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.78_Making_sense_of_problem_context">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.79_Complementary_perspectives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.79_Complementary_perspectives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.8_Reflection_and_concept_formation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.8_Reflection_and_concept_formation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.80_Detailing_and_uncovering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.80_Detailing_and_uncovering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.9_Efficient_and_effective -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80.9_Efficient_and_effective">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#Factor"/>
+        <isPartOf rdf:resource="http://www.semanticweb.org/vishalsingh/ontologies/2019/6/DesignExpertiseFactors#80Factors"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
